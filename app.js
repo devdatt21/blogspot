@@ -36,7 +36,7 @@ const PORT = process.env.PORT || 8000;
 
 //           if site is running on the website
 mongoose //here we have to give MONGO_URL while running the 
-    .connect(process.env.MONGO_URL, {
+    .connect("mongodb+srv://devdattrupapara21:B206W6t4tuShMyLZ@blogspot.6ubrio4.mongodb.net/blogspot?retryWrites=true&w=majority&appName=blogspot", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
