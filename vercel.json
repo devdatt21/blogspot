@@ -10,6 +10,6 @@
     }],
     "functions": {
         "app.js": {
-            "maxDuration": 10
+            "maxDuration": 300
         }
     }
