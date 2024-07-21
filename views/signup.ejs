@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+        <title>Sign Up</title>
+</head>
+
+<body>
+
+    <%- include('./partials/nav.ejs') %>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4>Register</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="/user/signup" method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Full Name</label>
+                                    <input type="text" name="fullName" class="form-control" id="fullName" aria-describedby="fullName" placeholder="Enter Fullname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="mb-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./partials/scripts.ejs') %>
+
+</body>
+
+
+</html>
