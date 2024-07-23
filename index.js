@@ -80,3 +80,5 @@ app.use("/blog", blogRouter);
 app.listen(PORT, () => {
     console.log(`Server started at Port no. ${PORT}`);
 });
+
+console.log("hey");
